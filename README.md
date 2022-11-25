@@ -1,6 +1,9 @@
 # React-Breaking-Bad-App
 Bu projede React, React Router, Redux, AsyncThunk ve Tailwindcss kullanılmıştır.
 
+Live -> https://breakingbadappyoo.netlify.app/
+
+
 ![Preview](./src/assets/preview.gif)
 
 # Getting Started with Create React App
