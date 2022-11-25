@@ -24,20 +24,17 @@ function Quotes() {
     return <div>Error: {error}</div>
   }
 
-
   return (
     <div className='container text-center mx-auto pt-20'>
       <ul>
         {
           items.map(item => (
-            <li className='py-2 transition-all duration-300 hover:scale-105'>
+            <li key={item.quote_id} className='py-2 transition-all duration-300 hover:scale-105'>
               {item.quote} - <span className='font-bold'>{item.author}</span>
             </li>
           ))
         }
       </ul>
-
-
     </div>
   )
 }

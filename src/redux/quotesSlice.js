@@ -12,6 +12,7 @@ export const quotesSlice = createSlice({
         items: [],
         status: "idle",
         error: ""
+
     },
     reducers: {},
     extraReducers: {
