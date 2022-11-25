@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from "react-redux"
 import { fetchAllQuotes } from "../../redux/quotesSlice"
+import Loading from "../../components/Loading"
 
 function Quotes() {
 
@@ -14,6 +15,10 @@ function Quotes() {
       dispatch(fetchAllQuotes())
     }
   },[dispatch, status])
+
+  if(status === "loading") {
+    return <Loading />
+  }
 
   if(error) {
     return <div>Error: {error}</div>

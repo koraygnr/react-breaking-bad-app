@@ -1,3 +1,8 @@
+# React-Breaking-Bad-App
+Bu projede React, React Router, Redux, AsyncThunk ve Tailwindcss kullanılmıştır.
+
+![Preview](./src/assets/preview.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

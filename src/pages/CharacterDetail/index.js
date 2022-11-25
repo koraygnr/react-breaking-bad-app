@@ -19,23 +19,16 @@ function CharacterDetail() {
       .finally(() => setLoading(false))
   }, [charId])
 
-
   if( loading ) {
     return <Loading />
   }
 
-
   return (
-
     <>
       <h1 className='pt-20 text-center text-2xl font-medium'>Character Details</h1>
-      
-
       {
         char && (
-          
           <div className='container mx-auto py-8'>
-
             <div className='flex flex-row  justify-center items-center gap-6'>
               <div>
                 <img src={char.img} alt={char.name} className="max-w-lg"/>
@@ -60,21 +53,12 @@ function CharacterDetail() {
                 <div className='mt-4'>
                 <Button name="Go Back" onClick={()=> navigate(-1)} />
                 </div>
-
               </div>
             </div>
-
           </div>
-
         )
       }
-
-
-
-
     </>
-
-
   )
 }
 

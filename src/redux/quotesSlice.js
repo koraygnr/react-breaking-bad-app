@@ -6,7 +6,6 @@ export const fetchAllQuotes = createAsyncThunk("quotes/getAllQuotes", async () =
     return res.data
 })
 
-
 export const quotesSlice = createSlice({
     name: "quotes",
     initialState: {

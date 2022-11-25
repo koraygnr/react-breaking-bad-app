@@ -9,7 +9,6 @@ export const fetchCharacters = createAsyncThunk("characters/getCharacters", asyn
     
 })
 
-
 export const charactersSlice = createSlice({
     name: "characters",
     initialState: {
